@@ -50,8 +50,10 @@
     font-size: 15px;
     text-align:center;
 }
-.label {
-    margin-left:10px;
+label {
+    justify-content:center;
+    margin-right:1rem;
+    margin-left:1.5rem;
 }
 
 :root {
