@@ -14,8 +14,8 @@
 #clock {
     font-size: .8em;
     font-weight: 400;
-    color: black;
-
+    background-color: var(--primary-background);
+    transition: color 0.4s, background-color 0.4s;
     text-align: center;
 }
 /* Number text (1/3 etc) */
@@ -43,4 +43,40 @@
     background-color: #717171;
 }
 
+.screen-mode {
+    padding: 15px;
+    background-color: darkgray;
+    color: black;
+    font-size: 15px;
+    text-align:center;
+}
+.label {
+    margin-left:10px;
+}
 
+:root {
+    color-scheme: light dark;
+    --primary-color: light-dark(#333, #fafafa);
+    --primary-background: light-dark(#e4e4e4, #121212);
+    --highlight-color: light-dark(hotpink, lime);
+}
+:root {
+    &:has(input[name="color-scheme"][value="light dark"]:checked) {
+        color-scheme: light dark;
+    }
+    &:has(input[name="color-scheme"][value="light"]:checked) {
+        color-scheme: light;
+    }
+    &:has(input[name="color-scheme"][value="dark"]:checked) {
+        color-scheme: dark;
+    }
+}
+body {
+    color: var(--primary-color);
+    background-color: var(--primary-background);
+    transition: color 0.4s, background-color 0.4s;
+}
+mark {
+    background: var(--highlight-color);
+    transition: color 0.4s, background-color 0.4s;
+}
