@@ -7,14 +7,18 @@
     max-width: 1000px;
     position: relative;
     margin: auto;
+
+}
+.carousel-inner {
+    border-radius: 15px;
 }
 
 
 
 #clock {
-    font-size: .8em;
+    font-size: 3em;
     font-weight: 400;
-    background-color: var(--primary-background);
+    background-color: transparent;
     transition: color 0.4s, background-color 0.4s;
     text-align: center;
 }
@@ -43,51 +47,64 @@
     background-color: #717171;
 }
 .screen-mode {
-    padding: 15px;
-    background-color: darkgray;
+    padding: 25px;
+    background-color: dimgray;
     color: black;
-    font-size: 15px;
+    font-size: 10px;
     text-align:center;
-}
-label {
-/*    display:flex;*/
-    justify-content:space-evenly;
-/*    align-items:center;*/
-    margin-right:0rem;
-    margin-left:1.5rem;
+    width: 100%;
 }
 
-:root {
-    color-scheme: light dark;
-    --primary-color: light-dark(#333, #fafafa);
-    --primary-background: light-dark(#e4e4e4, #121212);
-    --highlight-color: light-dark(hotpink, lime);
-}
-:root {
-    &:has(input[name="color-scheme"][value="light dark"]:checked) {
-        color-scheme: light dark;
-    }
-    &:has(input[name="color-scheme"][value="light"]:checked) {
-        color-scheme: light;
-    }
-    &:has(input[name="color-scheme"][value="dark"]:checked) {
-        color-scheme: dark;
-    }
-}
+
+
+
 body {
-    color: var(--primary-color);
-    background-color: var(--primary-background);
+    color: black;
+    background-color: white;
     transition: color 0.4s, background-color 0.4s;
+    font-family: sans-serif;
 }
-mark {
-    background: var(--highlight-color);
-    transition: color 0.4s, background-color 0.4s;
+body.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
 }
+.dark-mode-toggle {
+    position:static;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: transparent;
+    color:#FFFFFF8C;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dark-mode-toggle:hover {
+    background-color: #555;
+}
+
+.content {
+    padding: 100px 20px;
+    text-align: center;
+}
+
 .screen-mode img {
     position:absolute;
     left: 2rem;
-/*    width:contain;
-    height:contain;
-    float:left;*/
+    padding-bottom: 10px;
+
+}
+
+footer {
+    margin-top: 20px;
+    padding-top: 10px;
+    background-color: dimgray;
+    width: 100%;
 }
 

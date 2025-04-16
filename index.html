@@ -14,6 +14,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <img src="Aka.jpeg" style="width: 50px;height: 50px; border-radius: 50%;">
+
                 <!-- Bottone toggle per mobile -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
                     <span class="navbar-toggler-icon"></span>
@@ -22,6 +23,12 @@
                 <!-- Menu navigazione -->
                 <div class="collapse navbar-collapse" id="navbarMenu">
                     <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <button class="dark-mode-toggle" onclick="toggleDarkMode()">
+                                <span id="mode-icon">🌙</span>
+                                <span id="mode-text">Dark Mode</span>
+                            </button>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="index.html">Home</a>
                         </li>
@@ -71,6 +78,7 @@
         </div>
     </div>
 
+
     <h2>Le Stelle Cadute di Elyndor</h2>
     <p class="introduzione">
         Nelle terre frastagliate di Elyndor, dove le mappe si ridisegnano da sole e i venti portano voci dimenticate,
@@ -103,16 +111,15 @@
             Dietro la sua allegria si nasconde un destino che lui stesso finge di non voler conoscere.
         </p>
     </section>
-    <div id="clock">
-        <span id="hours"></span>
-        <span id="dots">:</span>
-        <span id="minutes"></span>
-    </div>
+    <footer>
      <div class="screen-mode">
-     <img src="ITS academy.png" style="width: 120px;height: 70px;"/>
-     <p>Dark Mode Setting:</p>
-     <label><input name="color-scheme" type="radio" value="light dark" checked />System</label> <label><input name="color-scheme" type="radio" value="light" />Forced Light</label><label><input name="color-scheme" type="radio" value="dark" />Forced Dark</label>
- </div>
+     <img src="ITS_academy.png" style="width: 120px;height: 70px;"/>
+         <div id="clock">
+             <span id="hours"></span>
+             <span id="dots">:</span>
+             <span id="minutes"></span>
+         </div>
+ </div></footer>
 </body>
 
 <!-- Bootstrap JS (include anche Popper) -->
