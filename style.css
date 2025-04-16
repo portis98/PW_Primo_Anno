@@ -56,6 +56,12 @@
 }
 
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
 
 
 body {
@@ -63,7 +69,10 @@ body {
     background-color: white;
     transition: color 0.4s, background-color 0.4s;
     font-family: sans-serif;
+
+
 }
+
 body.dark-mode {
     background-color: #121212;
     color: #f0f0f0;
@@ -92,6 +101,8 @@ body.dark-mode {
 .content {
     padding: 100px 20px;
     text-align: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .screen-mode img {
@@ -100,11 +111,16 @@ body.dark-mode {
     padding-bottom: 10px;
 
 }
+.bottom-section{
+    margin-bottom: 200px;
+}
+
 
 footer {
-    margin-top: 20px;
+
     padding-top: 10px;
     background-color: dimgray;
     width: 100%;
+
 }
 
