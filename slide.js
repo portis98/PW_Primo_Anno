@@ -22,7 +22,26 @@ function updateClock() {
 setInterval(updateClock, 1000);
 updateClock(); // Chiama subito all’avvio
 
-
+//Mantenimento modalità dark anche dopo refresh
+const radios = document.querySelectorAll('input[name="color-scheme"]');
+window.addEventListener('DOMContentLoaded', () => {
+  const savedScheme = localStorage.getItem('color-scheme');
+  if (savedScheme) {
+    const radio = document.querySelector(`input[name="color-scheme"][value="${savedScheme}"]`);
+    if (radio) radio.checked = true;
+    applyColorScheme(savedScheme);
+  }
+});
+radios.forEach(radio => {
+  radio.addEventListener('change', (e) => {
+    const value = e.target.value;
+    localStorage.setItem('color-scheme', value);
+    applyColorScheme(value);
+  });
+});
+function applyColorScheme(scheme) {
+  document.documentElement.setAttribute('data-color-scheme', scheme);
+}
 
 
 
