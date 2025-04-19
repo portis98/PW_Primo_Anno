@@ -15,7 +15,7 @@ html, body {
 
 body {
     color: black;
-    background-color: lightgray;
+    background-color: white;
     transition: color 0.4s, background-color 0.4s;
 
     font-family: Arial, Helvetica, sans-serif;
@@ -27,6 +27,7 @@ body {
 }
 
 body.dark-mode {
+
     background-color: #121212;
     color: #f0f0f0;
 }
@@ -55,11 +56,11 @@ body.dark-mode {
     background-color: dimgray;
     width: 100%;
     bottom: 0;
-    width: 100%;
+    opacity: 1;
 }
 
 .character-card {
-    max-width: 800px;
+    max-width: 1500px;
     margin: auto;
 
     padding: 20px;
@@ -78,7 +79,7 @@ body.dark-mode {
     width: 120px;
     height: 120px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 20%;
     margin-right: 20px;
     border: 2px solid #888;
 }
@@ -125,3 +126,5 @@ ul {
 .Attributi h3{
     color: #ffd166;
 }
+
+
