@@ -22,7 +22,7 @@ function updateClock() {
 // Esegui l'update dell'orologio ogni secondo
 setInterval(updateClock, 1000);
 updateClock(); // Chiama subito all’avvio
-
+fetchWeather(); // chiama il meteo all'avvio
 
 const modeIcon = document.getElementById("mode-icon");
 const modeText = document.getElementById("mode-text");
