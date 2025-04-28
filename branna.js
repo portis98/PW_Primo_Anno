@@ -1,10 +1,3 @@
-var myCarousel = document.querySelector('#carouselExample')
-var carousel = new bootstrap.Carousel(myCarousel, {
-    interval: 3000,  // Cambia l'immagine ogni 3 secondi
-    ride: 'carousel'
-})
-
-// Funzione per l'orologio
 function updateClock() {
     const now = new Date();
     const hours = String(now.getHours()).padStart(2, '0');
@@ -22,7 +15,7 @@ function updateClock() {
 // Esegui l'update dell'orologio ogni secondo
 setInterval(updateClock, 1000);
 updateClock(); // Chiama subito all’avvio
-fetchWeather(); // chiama il meteo all'avvio
+fetchWeather();
 
 const modeIcon = document.getElementById("mode-icon");
 const modeText = document.getElementById("mode-text");
@@ -40,15 +33,12 @@ window.onload = function () {
 function toggleDarkMode() {
     document.body.classList.toggle("dark-mode");
     const isDark = document.body.classList.contains("dark-mode");
-
-    // Cambia icona e testo
     modeIcon.textContent = isDark ? "🌞" : "🌙";
     modeText.textContent = isDark ? "Light Mode" : "Dark Mode";
-
-    // Salva preferenza
     localStorage.setItem("darkMode", isDark ? "enabled" : "disabled");
 }
 
+// Meteo da Open-Meteo
 function fetchWeather() {
     const apiUrl = "https://api.open-meteo.com/v1/forecast?latitude=44.6478&longitude=10.9254&current_weather=true";
 
@@ -64,9 +54,3 @@ function fetchWeather() {
             document.getElementById('weather-description').textContent = "Meteo non disponibile.";
         });
 }
-
-
-
-
-
-
