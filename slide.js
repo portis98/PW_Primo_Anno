@@ -49,7 +49,21 @@ function toggleDarkMode() {
     localStorage.setItem("darkMode", isDark ? "enabled" : "disabled");
 }
 
+function fetchWeather() {
+    const apiUrl = "https://api.open-meteo.com/v1/forecast?latitude=44.6478&longitude=10.9254&current_weather=true";
 
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            const temperature = data.current_weather.temperature;
+            document.getElementById("weather-description").textContent = "Temperatura attuale:";
+            document.getElementById("temperature").textContent = `${temperature}°C`;
+        })
+        .catch(error => {
+            console.error('Errore nel recuperare il meteo:', error);
+            document.getElementById('weather-description').textContent = "Meteo non disponibile.";
+        });
+}
 
 
 
