@@ -1,0 +1,192 @@
+/* Insert here the CSS for the section of the member "bob" *//* Regole base */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: sans-serif;
+    transition: background-color 0.4s, color 0.4s;
+    background-color: white;
+    color: black;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+/* Navbar */
+/* .navbar {
+    background-color: #212529;
+}
+
+.navbar .nav-link {
+    color: #f8f9fa;
+}
+
+.navbar .nav-link:hover {
+    color: #ffa726;
+} */
+
+.dark-mode-toggle {
+    position:static;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: transparent;
+    color:#FFFFFF8C;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+body.dark-mode .navbar {
+    background-color: #1f1f1f; /* Più scuro del normale */
+}
+body.dark-mode .nav-link {
+    color: #f0f0f0; /* Link chiari */
+}
+body.dark-mode .nav-link:hover {
+    color: #bbbbbb; /* Leggermente più chiaro al passaggio */
+}
+
+.dark-mode-toggle:hover {
+    background-color: #555;
+}
+body.dark-mode main {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+/* Per i bottoni */
+body.dark-mode .btn-back {
+    background-color: #333;
+    color: #f0f0f0;
+    border: 1px solid #555;
+}
+
+body.dark-mode .btn-back:hover {
+    background-color: #555;
+}
+/* Contenuto */
+.content {
+    padding: 40px 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #ff6b6b;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px black;
+}
+
+h2, h3 {
+    color: #ffc107;
+    margin-top: 30px;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+a.btn-back {
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+    color: #ff6b6b;
+    font-weight: bold;
+}
+
+a.btn-back:hover {
+    color: #ffa726;
+}
+
+/* Immagine di Branna */
+.branna-image {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.branna-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+/* Footer */
+/* footer {
+
+
+
+    text-align: center;
+} */
+.weather-container{
+    display: flex;
+    justify-content: flex-end;
+    right: 2rem;
+    
+}
+.screen-mode{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    background-color: dimgray;
+    padding: 10px;
+    color: black;
+}
+.screen-mode img {
+    position:absolute;
+    left: 2rem;
+    padding-bottom: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .content {
+        padding: 20px 10px;
+    }
+
+    .branna-image img {
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2, h3 {
+        font-size: 1.4rem;
+    }
+
+    p, li, a.btn-back {
+        font-size: 1rem;
+    }
+
+    .branna-image img {
+        border-radius: 10px;
+    }
+}
+
