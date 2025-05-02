@@ -16,6 +16,7 @@ html, body {
 body {
     color: black;
     background-color: white;
+
     transition: color 0.4s, background-color 0.4s;
 
 
@@ -54,7 +55,7 @@ body.dark-mode {
 }
 .screen-mode{
     padding-top: 10px;
-    background:gray;  opacity: 0.8;
+    background-color: rgba(128, 128, 128, 0.4); /* grigio con opacità */
     width: 100%;
     bottom: 0;
 
@@ -62,7 +63,7 @@ body.dark-mode {
 
 
 .character-card {
-    max-width: 1500px;
+    max-width: 1000px;
     margin: auto;
     background-color: rgba(0, 0, 0, 0.2);
     padding: 20px;
@@ -97,6 +98,7 @@ body.dark-mode {
 
 .character-section h2 {
     color: #ffd166;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     margin-bottom: 10px;
 }
 
@@ -125,9 +127,11 @@ ul {
 }
 .Statistiche h3{
     color: #ffd166;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 .Attributi h3{
     color: #ffd166;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 
