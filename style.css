@@ -16,13 +16,15 @@
 
 
 #clock {
+    position: absolute;
+    left: 50%;
     font-size: 3em;
     font-weight: 400;
     background-color: transparent;
     transition: color 0.4s, background-color 0.4s;
     text-align: center;
 }
-/* Number text (1/3 etc) */
+
 .numbertext {
     color: #f2f2f2;
     font-size: 12px;
@@ -31,13 +33,13 @@
     top: 0;
 }
 
-/* The dots/bullets/indicators */
+
 .dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #bbb;
+
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
@@ -47,12 +49,22 @@
     background-color: #717171;
 }
 .screen-mode {
-    padding: 25px;
+    /*padding: 25px;
     background-color: dimgray;
     color: black;
     font-size: 10px;
     text-align:center;
+    width: 100%;*/
+    display: flex;
+    align-items: center;       /* centra verticalmente */
+    justify-content: space-between; /* separa immagine a sinistra e orologio a destra */
+
+    padding: 10px 20px;
     width: 100%;
+
+
+
+
 }
 
 
@@ -106,9 +118,11 @@ body.dark-mode {
 }
 
 .screen-mode img {
-    position:absolute;
-    left: 2rem;
-    padding-bottom: 10px;
+    position:relative;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 60px;
 
 }
 .bottom-section{
@@ -118,9 +132,13 @@ body.dark-mode {
 
 footer {
 
-    padding-top: 10px;
-    background-color: dimgray;
+    padding: 5px 5px;
+    font-size: 10px;
+    background-color: rgba(128, 128, 128, 0.4); /* grigio semi-trasparente */
     width: 100%;
 
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
