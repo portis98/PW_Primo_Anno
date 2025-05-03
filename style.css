@@ -5,6 +5,7 @@
 
 .carousel {
     margin: 40px auto;
+    margin-bottom: 100px;
     max-width: 1000px;
     position: relative;
 
@@ -12,6 +13,8 @@
 }
 .carousel-inner {
     border-radius: 15px;
+    max-height: 500px;
+
 }
 
 
@@ -129,6 +132,7 @@ body.dark-mode {
     margin-top: 50px;
     margin-bottom: 50px;
     flex-wrap: wrap;
+
 }
 .Pg1{
     padding: 0px 15px;
@@ -140,6 +144,12 @@ body.dark-mode {
     padding: 15px;
     box-shadow: 0 4px 8px rgba(199, 102, 0, 0.8);
     text-align: center;
+    align-items: center;
+}
+.Pg1 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20%;
 }
 .Pg2{
     padding: 0px 15px;
@@ -162,6 +172,7 @@ body.dark-mode {
     padding: 15px;
     box-shadow: 0 4px 8px rgba(50, 205, 50, 0.5);
     text-align: center;
+    overflow-x: auto;
 
 
 }
