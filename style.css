@@ -4,9 +4,10 @@
 
 
 .carousel {
+    margin: 40px auto;
     max-width: 1000px;
     position: relative;
-    margin: auto;
+
 
 }
 .carousel-inner {
@@ -187,5 +188,14 @@ a{
     color: rebeccapurple;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     text-decoration: none;
+}
+.titolo-progetto {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgba(218, 128, 128, 0.1);
+    color: #ffc107;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+
+
 }
 
