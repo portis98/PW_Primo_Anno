@@ -52,11 +52,23 @@ body.dark-mode {
 .dark-mode-toggle:hover {
     background-color: #555;
 }
-.screen-mode{
-    padding-top: 10px;
-    background-color: rgba(128, 128, 128, 0.4); /* grigio con opacità */
+footer {
+
+    padding: 5px 5px;
+    font-size: 10px;
+    background-color: rgba(128, 128, 128, 0.4); /* grigio semi-trasparente */
     width: 100%;
+
     bottom: 0;
+    left: 0;
+    right: 0;
+}
+.screen-mode img {
+    position:relative;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 60px;
 
 }
 
@@ -93,21 +105,25 @@ body.dark-mode {
 
 .character-section {
     margin-top: 20px;
+
 }
 
 .character-section h2 {
     color: #ffd166;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     margin-bottom: 10px;
+
 }
 
 ul {
     list-style-type: square;
     padding-left: 20px;
+
 }
 .contenitore-attributi{
     display: flex;
     gap: 60px;
+    border-top: 1px solid #444;
 }
 .Attributi{
     padding: 0px 15px;
