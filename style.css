@@ -134,6 +134,14 @@ body.dark-mode {
     flex-wrap: wrap;
 
 }
+.Personaggi > div {
+    transition: transform 0.3s ease;
+}
+
+.Personaggi > div:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
 .Pg1{
     padding: 0px 15px;
     width: 25%;
