@@ -50,15 +50,10 @@
     background-color: #717171;
 }
 .screen-mode {
-    /*padding: 25px;
-    background-color: dimgray;
-    color: black;
-    font-size: 10px;
-    text-align:center;
-    width: 100%;*/
+
     display: flex;
-    align-items: center;       /* centra verticalmente */
-    justify-content: space-between; /* separa immagine a sinistra e orologio a destra */
+    align-items: center;
+    justify-content: space-between;
 
     padding: 10px 20px;
     width: 100%;
@@ -82,6 +77,7 @@ body {
     background-color: white;
     transition: color 0.4s, background-color 0.4s;
     font-family: sans-serif;
+
 
 
 }
@@ -191,11 +187,21 @@ a{
 }
 .titolo-progetto {
     text-align: center;
+    border-radius: 10px;
     padding: 40px 20px;
     background: rgba(218, 128, 128, 0.1);
+    border-bottom: 2px solid #ffc107 ;
     color: #ffc107;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-left: 10px;
+    margin-right: 10px;
 
 
 }
+.separatore {
 
+    height: 2px;
+    background-color: #ffc107;
+    margin: 0 10px 30px 10px; /* top, right, bottom, left */
+    opacity: 0.6;
+}
