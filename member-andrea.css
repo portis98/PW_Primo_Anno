@@ -1,0 +1,136 @@
+
+section{
+    margin-bottom: 3%;
+    margin-top: 3%;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    flex: 1;
+
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    color: black;
+    background-color: white;
+    transition: color 0.4s, background-color 0.4s;
+
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body.dark-mode {
+
+    background-color: black;
+    color: #f0f0f0;
+}
+.dark-mode-toggle {
+    position:static;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: transparent;
+    color:#FFFFFF8C;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dark-mode-toggle:hover {
+    background-color: #555;
+}
+.screen-mode{
+    padding-top: 10px;
+    background-color: rgba(128, 128, 128, 0.4); /* grigio con opacità */
+    width: 100%;
+    bottom: 0;
+
+}
+
+
+.character-card {
+    max-width: 1000px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+
+.character-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #444;
+    padding-bottom: 20px;
+}
+
+.character-header img {
+    width: 140px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 20%;
+    margin-right: 20px;
+    border: 2px solid #888;
+}
+
+.character-info h1 {
+    margin: 0 0 10px;
+
+}
+
+.character-section {
+    margin-top: 20px;
+}
+
+.character-section h2 {
+    color: #ffd166;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+.contenitore-attributi{
+    display: flex;
+    gap: 60px;
+}
+.Attributi{
+    padding: 0px 15px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.Statistiche{
+    padding: 0px 15px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Statistiche h3{
+    color: #ffd166;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.Attributi h3{
+    color: #ffd166;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+
