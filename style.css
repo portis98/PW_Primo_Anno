@@ -171,7 +171,7 @@ body.dark-mode #weather {
 footer {
     padding: 5px 5px;
     font-size: 10px;
-    background-color: rgba(128, 128, 128, 0.4); /* grigio semi-trasparente */
+    background-color: rgba(128, 128, 128, 0.2); /* grigio semi-trasparente */
     width: 100%;
 
     bottom: 0;
@@ -187,7 +187,7 @@ a{
     text-align: center;
     border-radius: 10px;
     padding: 40px 20px;
-    background: rgba(218, 128, 128, 0.1);
+    background: rgba(128, 128, 128, 0.2);
     border-bottom: 2px solid #ffc107 ;
     color: #ffc107;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
