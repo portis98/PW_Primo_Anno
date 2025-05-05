@@ -48,7 +48,7 @@ function fetchWeather() {
             const temperature = data.current_weather.temperature;
             const weatherCode = data.current_weather.weathercode;
             const weatherDescription = mapWeatherCodeToDescription(weatherCode);
-            document.getElementById("weather-description").textContent = "Temperatura attuale:";
+            document.getElementById("weather-description").textContent = weatherDescription;
             document.getElementById("temperature").textContent = `${temperature}°C`;
         })
         .catch(error => {
