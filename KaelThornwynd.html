@@ -1,42 +1,61 @@
 ﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
     <meta charset="utf-8" />
-    <link media="screen" rel="stylesheet" href="member-carl.css">
+    <link media="screen" rel="stylesheet" href="kael.css">
     <title>Kael Thornwynd</title>
 </head>
 <body>
-    <h1>Kael Thornwynd</h1>
-    <h2 class="Eta">Età</h2><p>34 anni</p>
-    <h2 class="Razza">Razza</h2><p>Mezzelfo</p>
-    <p> </p>
-    <h3>Professione:</h3>
-    <p>Cartografo arcano e avventuriero</p>
-    <h3>Aspetto fisico:</h3>
-    <p>
-        Alto e snello, occhi color ambra che brillano lievemente al buio, capelli corvini lunghi fino alle spalle spesso legati in un mezzo codino disordinato.
-        Indossa un lungo mantello color notte, cucito con fili d’argento che tracciano costellazioni. Una cicatrice sottile gli taglia il sopracciglio sinistro.
-    </p>
-    <h3>Personalità:</h3>
-    <p>
-        Kael è curioso fino al midollo, con un’insaziabile sete di conoscenza che lo ha spinto a esplorare terre dimenticate e rovine sigillate dal tempo.
-        È riflessivo, a tratti introverso, ma la sua mente è un labirinto di teorie astrali, formule magiche e racconti raccolti lungo i viaggi. 
-        È animato da un profondo senso di giustizia, ma tende a fidarsi più dei libri che delle persone.
-    </p>
-    <h3>Background:</h3>
-    <p>
-        Nato da una studiosa elfa e un marinaio umano, Kael ha vissuto l’infanzia tra biblioteche polverose e racconti di mare.
-        Ha studiato all’Accademia degli Arcanografi a Lioren, dove ha imparato a fondere la magia con la cartografia, creando mappe viventi che mutano con il mondo.
-        Dopo aver scoperto un antico frammento di mappa che conduce a un continente scomparso, Kael ha lasciato tutto per inseguire il mistero, diventando una leggenda tra gli avventurieri.
-    </p>
-    <h3>Poteri/Abilità:</h3>
-    <ul>
-        <li>Mappe arcane: può creare mappe magiche che rivelano passaggi nascosti, trappole o illusioni.</li>
-        <li>Linguaggi dimenticati: conosce e può decifrare numerose lingue antiche e simboli perduti.</li>
-        <li>Passo d’ombra: un incantesimo che gli permette di spostarsi brevemente da un’ombra all’altra.</li>
-        <li>Lente dell’Osservatore: un monocolo incantato che rivela la vera natura delle cose.</li>
-    </ul>
-<a href="index.html">Torna a Home</a>
+    <div class="top-bar">
+        <a class="home-link" href="index.html">Home</a>
+        <button class="dark-mode-toggle" onclick="toggleDarkMode()">
+            <span id="mode-icon">🌙</span>
+            <span id="mode-text">Dark Mode</span>
+        </button>
+    </div>
+
+    <div class="image-container">
+        <img src="kael.jpeg" alt="Kael" class="character-image">
+    </div>
+
+    <div class="character-box">
+        <h1>Kael Thornwynd</h1>
+        <h2>Età</h2><p>34 anni</p>
+        <h2>Razza</h2><p>Mezzelfo</p>
+
+        <h3>Professione:</h3>
+        <p>Cartografo arcano e avventuriero</p>
+
+        <h3>Aspetto fisico:</h3>
+        <p>
+            Alto e snello, occhi color ambra che brillano lievemente al buio, capelli corvini lunghi fino alle spalle spesso legati in un mezzo codino disordinato.
+            Indossa un lungo mantello color notte, cucito con fili d’argento che tracciano costellazioni. Una cicatrice sottile gli taglia il sopracciglio sinistro.
+        </p>
+
+        <h3>Personalità:</h3>
+        <p>
+            Kael è curioso fino al midollo, con un’insaziabile sete di conoscenza che lo ha spinto a esplorare terre dimenticate e rovine sigillate dal tempo.
+            È riflessivo, a tratti introverso, ma la sua mente è un labirinto di teorie astrali, formule magiche e racconti raccolti lungo i viaggi.
+            È animato da un profondo senso di giustizia, ma tende a fidarsi più dei libri che delle persone.
+        </p>
+
+        <h3>Background:</h3>
+        <p>
+            Nato da una studiosa elfa e un marinaio umano, Kael ha vissuto l’infanzia tra biblioteche polverose e racconti di mare.
+            Ha studiato all’Accademia degli Arcanografi a Lioren, dove ha imparato a fondere la magia con la cartografia, creando mappe viventi che mutano con il mondo.
+            Dopo aver scoperto un antico frammento di mappa che conduce a un continente scomparso, Kael ha lasciato tutto per inseguire il mistero, diventando una leggenda tra gli avventurieri.
+        </p>
+
+        <h3>Poteri/Abilità:</h3>
+        <ul>
+            <li>Mappe arcane: può creare mappe magiche che rivelano passaggi nascosti, trappole o illusioni.</li>
+            <li>Linguaggi dimenticati: conosce e può decifrare numerose lingue antiche e simboli perduti.</li>
+            <li>Passo d’ombra: un incantesimo che gli permette di spostarsi brevemente da un’ombra all’altra.</li>
+            <li>Lente dell’Osservatore: un monocolo incantato che rivela la vera natura delle cose.</li>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="KaelThornwynd.js"></script>
 </body>
 </html>
+
