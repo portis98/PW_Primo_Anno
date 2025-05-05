@@ -9,7 +9,9 @@
 }
 .carousel-inner {
     border-radius: 15px;
-    max-height: 500px;
+    height: 500px;
+
+
 }
 #clock {
     position: absolute;
