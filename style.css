@@ -141,6 +141,11 @@ body.dark-mode {
     padding: 15px;
     box-shadow: 0 4px 8px rgba(255, 9, 0, 0.4);
 }
+.Pg2 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 25%;
+}
 .Pg3 {
     padding: 0px 15px;
     width: 25%;
