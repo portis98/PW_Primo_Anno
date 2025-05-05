@@ -35,13 +35,18 @@
 
     <main class="content">
         <h1>Branna Emberfall</h1>
-        <div class="weather-container">
-                <div id="weather">
+        <div class="info-row">
+            <div class="character-image">
+                <img src="branna.png" alt="Branna Emberfall" />
+            </div>
+            <div class="weather-container">
+                <div id="weather" class="text-end">
                     <h3>Meteo Attuale</h3>
                     <p id="weather-description"></p>
                     <p id="temperature"></p>
                 </div>
             </div>
+        </div>
         <h2>Età</h2>
         <p>38 anni</p>
 
@@ -59,20 +64,17 @@
             Occhi grigio fumo. Armatura di cuoio con inserti di ferro meteoritico. <br>
             Porta la spada "Cindervow".
         </p>
-
         <h3>Personalità:</h3>
         <p>
             Poche parole, granitico senso dell’onore. <br>
             Diretto, protettiva verso i più deboli. <br>
             Porta il peso di chi ha visto troppi addii.
         </p>
-
         <h3>Background:</h3>
         <p>
             Cresciuta come contadina, poi Guardie Cremisi di Tyr Vhalor. <br>
             Tradita, ora mercenaria sotto falso nome.
         </p>
-
         <h3>Poteri/Abilità:</h3>
         <ul>
             <li><strong>Cindervow</strong>: fende illusioni e smaschera bugie.</li>
@@ -80,21 +82,21 @@
             <li><strong>Volontà di Ferro</strong>: resiste a magie mentali.</li>
             <li><strong>Segugio del Vero</strong>: percepisce menzogne e imboscate.</li>
         </ul>
-
         <a href="index.html" class="btn-back">Torna a Home</a>
-
-        
-        
-    <footer class="screen-mode">
-        <div class="info-container">
-            <img src="ITS_academy.png" style="width: 120px;height: 70px;"/>
-            <div id="clock">
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="footer-section logo">
+                <img src="ITS_academy.png" alt="Logo ITS" />
+            </div>
+            <div class="footer-section clock" id="clock">
                 <span id="hours"></span>
                 <span id="dots">:</span>
                 <span id="minutes"></span>
             </div>
-            
-        <p>Pagina di Luca Porta</p>
+            <div class="footer-section author">
+                <p>Pagina di Luca Porta</p>
+            </div>
+        </div>
     </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
