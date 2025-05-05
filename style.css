@@ -1,24 +1,16 @@
 * {
     box-sizing: border-box
 }
-
-
 .carousel {
     margin: 40px auto;
     margin-bottom: 100px;
     max-width: 1000px;
     position: relative;
-
-
 }
 .carousel-inner {
     border-radius: 15px;
     max-height: 500px;
-
 }
-
-
-
 #clock {
     position: absolute;
     left: 50%;
@@ -28,7 +20,6 @@
     transition: color 0.4s, background-color 0.4s;
     text-align: center;
 }
-
 .numbertext {
     color: #f2f2f2;
     font-size: 12px;
@@ -36,8 +27,6 @@
     position: absolute;
     top: 0;
 }
-
-
 .dot {
     cursor: pointer;
     height: 15px;
@@ -48,43 +37,27 @@
     display: inline-block;
     transition: background-color 0.6s ease;
 }
-
 .active, .dot:hover {
     background-color: #717171;
 }
 .screen-mode {
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding: 10px 20px;
     width: 100%;
-
-
-
-
 }
-
-
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-
 }
-
-
 body {
     color: black;
     background-color: white;
     transition: color 0.4s, background-color 0.4s;
     font-family: sans-serif;
-
-
-
 }
-
 body.dark-mode {
     background-color: #121212;
     color: #f0f0f0;
@@ -109,21 +82,18 @@ body.dark-mode {
 .dark-mode-toggle:hover {
     background-color: #555;
 }
-
 .content {
     padding: 100px 20px;
     text-align: center;
     width: 100%;
     box-sizing: border-box;
 }
-
 .screen-mode img {
     position:relative;
     left: 0;
     margin: 0;
     padding: 0;
     height: 60px;
-
 }
 .Personaggi{
     display: flex;
@@ -132,12 +102,10 @@ body.dark-mode {
     margin-top: 50px;
     margin-bottom: 50px;
     flex-wrap: wrap;
-
 }
 .Personaggi > div {
     transition: transform 0.3s ease;
 }
-
 .Personaggi > div:hover {
     transform: scale(1.1);
     z-index: 1;
@@ -181,15 +149,26 @@ body.dark-mode {
     box-shadow: 0 4px 8px rgba(50, 205, 50, 0.5);
     text-align: center;
     overflow-x: auto;
-
-
 }
-
-.weather-container{
-    margin-bottom: 150px;
+.weather-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    padding-right: 20px;
+}
+#weather {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: right;
+    max-width: 250px;
+    color: inherit;
+}
+body.dark-mode #weather {
+    background-color: rgba(0, 0, 0, 0.3);
 }
 footer {
-
     padding: 5px 5px;
     font-size: 10px;
     background-color: rgba(128, 128, 128, 0.4); /* grigio semi-trasparente */
@@ -214,8 +193,6 @@ a{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     margin-left: 10px;
     margin-right: 10px;
-
-
 }
 .separatore {
 
