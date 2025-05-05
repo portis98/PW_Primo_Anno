@@ -100,6 +100,21 @@ a.btn-back {
 a.btn-back:hover {
     color: #ffa726;
 }
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto 30px auto;
+    max-width: 800px;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+.character-image img {
+    max-width: 180px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
 .weather-container {
     display: flex;
     justify-content: flex-end;
@@ -200,16 +215,13 @@ footer.footer {
         text-align: center;
     }
 }
-
 @media (max-width: 480px) {
     h1 {
         font-size: 1.8rem;
     }
-
     h2, h3 {
         font-size: 1.4rem;
     }
-
     p, li, a.btn-back {
         font-size: 1rem;
     }

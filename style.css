@@ -4,7 +4,7 @@
 .carousel {
     margin: 40px auto;
     margin-bottom: 100px;
-    max-width: 1000px;
+    max-width: 333px;
     position: relative;
 }
 .carousel-inner {
@@ -102,6 +102,7 @@ body.dark-mode {
     margin-top: 50px;
     margin-bottom: 50px;
     flex-wrap: wrap;
+
 }
 .Personaggi > div {
     transition: transform 0.3s ease;
@@ -200,4 +201,9 @@ a{
     background-color: #ffc107;
     margin: 0 10px 30px 10px; /* top, right, bottom, left */
     opacity: 0.6;
+}
+.membri-party{
+    margin-left: 50px;
+    color: #ffc107;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
